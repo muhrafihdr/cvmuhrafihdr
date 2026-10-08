@@ -354,7 +354,7 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 
 .hero__inner {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: clamp(32px, 5vw, 72px);
   position: relative;
@@ -392,10 +392,10 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 .hero__title {
   font-family: var(--font-display);
   font-weight: 800;
-  font-size: clamp(2.5rem, 8.2vw, 5.6rem);
-  line-height: 0.92;
-  letter-spacing: -0.045em;
-  margin-bottom: 24px;
+  font-size: clamp(2rem, 5.6vw, 3.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  margin-bottom: 22px;
 }
 .hero__line { display: block; }
 .hero__line--accent {
@@ -475,7 +475,7 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 .btn--lg { padding: 17px 30px; font-size: 1rem; }
 
 /* Hero visual */
-.hero__visual { position: relative; justify-self: center; width: min(100%, 400px); }
+.hero__visual { position: relative; justify-self: center; width: min(100%, 540px); }
 
 .hero__photo-frame {
   position: relative;
@@ -1352,9 +1352,9 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
   .nav__cta { text-align: center; margin-left: 0; margin-top: 6px; }
 
   .hero__inner { grid-template-columns: 1fr; }
-  .hero__visual { order: -1; width: min(78%, 330px); margin-bottom: 6px; }
+  .hero__visual { order: -1; width: min(90%, 420px); margin-bottom: 6px; }
   .hero__content { text-align: left; }
-  .hero__title { font-size: clamp(2.5rem, 12vw, 4.4rem); }
+  .hero__title { font-size: clamp(1.9rem, 8.4vw, 3.1rem); }
 
   .about { grid-template-columns: 1fr; }
   .about__card { position: static; }
