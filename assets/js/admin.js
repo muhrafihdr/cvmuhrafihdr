@@ -111,6 +111,25 @@
     return { json: await res.json(), sha: "" };
   }
 
+  async function uploadImage(file, baseName) {
+    if (!token) throw new Error("Login dulu dengan GitHub token untuk upload.");
+    const ext = (file.name.split(".").pop() || "jpg").toLowerCase().replace(/[^a-z0-9]/g, "");
+    const base = String(baseName || "img")
+      .replace(/[^a-z0-9-]/gi, "-")
+      .toLowerCase();
+    const name = `${base}-${Date.now()}.${ext}`;
+    const path = `assets/img/${name}`;
+    const buf = new Uint8Array(await file.arrayBuffer());
+    let bin = "";
+    buf.forEach((b) => (bin += String.fromCharCode(b)));
+    await gh(`/repos/${CFG.owner}/${CFG.repo}/contents/${path}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: "assets: upload " + name, content: btoa(bin), branch: CFG.branch }),
+    });
+    return path;
+  }
+
   /* ---------- boot / load ---------- */
   async function boot() {
     if (token) {
@@ -265,6 +284,46 @@
           img.src = inp.value;
         });
         wrap.appendChild(img);
+
+        const row = document.createElement("div");
+        row.className = "upload";
+        const up = document.createElement("button");
+        up.type = "button";
+        up.className = "btn btn--ghost btn--sm";
+        up.textContent = "⬆ Upload gambar";
+        const fi = document.createElement("input");
+        fi.type = "file";
+        fi.accept = "image/*";
+        fi.hidden = true;
+        up.addEventListener("click", () => fi.click());
+        fi.addEventListener("change", async () => {
+          const file = fi.files && fi.files[0];
+          if (!file) return;
+          if (!file.type.startsWith("image/")) return toast("File harus berupa gambar.", "is-err");
+          if (file.size > 5 * 1024 * 1024) return toast("Ukuran gambar maksimal 5 MB.", "is-err");
+          up.disabled = true;
+          up.textContent = "Mengunggah…";
+          setStatus("Mengunggah gambar…", "warn");
+          try {
+            const p = await uploadImage(file, key);
+            parent[key] = p;
+            inp.value = p;
+            img.style.display = "";
+            img.src = p;
+            setStatus("Gambar terunggah ✓ (klik Simpan)", "ok");
+            toast("Gambar terunggah. Klik 💾 Simpan untuk menerapkan ke situs.", "is-ok");
+          } catch (e) {
+            setStatus("Upload gagal", "err");
+            toast("Upload gagal: " + e.message, "is-err");
+          } finally {
+            up.disabled = false;
+            up.textContent = "⬆ Upload gambar";
+            fi.value = "";
+          }
+        });
+        row.appendChild(up);
+        row.appendChild(fi);
+        wrap.appendChild(row);
       }
       return wrap;
     }

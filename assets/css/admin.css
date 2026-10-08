@@ -290,6 +290,8 @@ code { font-family: var(--font-mono); font-size: 0.82em; color: var(--blue); }
 }
 .field input:focus, .field textarea:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(77, 141, 255, 0.12); }
 .field textarea { min-height: 88px; line-height: 1.6; font-family: var(--font-body); }
+.upload { display: flex; gap: 8px; align-items: center; margin-top: 4px; }
+.upload .btn--sm { padding: 7px 13px; font-size: 0.78rem; }
 
 .switch { display: flex; align-items: center; gap: 10px; font-size: 0.9rem; color: var(--txt-dim); }
 .switch input { width: 18px; height: 18px; accent-color: var(--blue); }
