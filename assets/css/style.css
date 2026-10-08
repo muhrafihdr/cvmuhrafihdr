@@ -1225,6 +1225,26 @@ html.js .reveal.is-visible { opacity: 1; transform: none; }
 .footer__links a { font-size: 0.86rem; color: var(--txt-dim); transition: color 0.3s; }
 .footer__links a:hover { color: var(--blue); }
 
+.footer__admin {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 15px;
+  border-radius: 99px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--txt-dim) !important;
+  font-weight: 500;
+  transition: all 0.35s var(--ease);
+}
+.footer__admin:hover {
+  color: #08080c !important;
+  background: var(--blue);
+  border-color: var(--blue);
+  transform: translateY(-2px);
+  box-shadow: var(--glow-blue);
+}
+
 .footer__copy {
   width: 100%;
   padding-top: 26px;

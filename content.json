@@ -1,0 +1,339 @@
+{
+  "meta": {
+    "title": "Muhammad Rafi Haidar Arsyad — Dosen Sains Data & Digital Strategist",
+    "description": "Portofolio digital Muhammad Rafi Haidar Arsyad (M.Kom) — Dosen Sains Data, AI Analytics, Web Management, dan Digital Strategist untuk pendidikan dan industri.",
+    "updatedAt": "2026-01-01"
+  },
+  "profile": {
+    "brand": "rafi.haidar",
+    "nameLines": ["MUHAMMAD", "RAFI HAIDAR", "ARSYAD"],
+    "fullName": "Muhammad Rafi Haidar Arsyad",
+    "badge": "Open for collaboration · 2026",
+    "roles": [
+      "Dosen Sains Data",
+      "Digital Strategist",
+      "AI & Machine Learning Researcher",
+      "Tech Educator & Speaker",
+      "Marketplace Analyst"
+    ],
+    "descHtml": "Dosen Sains Data & Digital Strategist yang berfokus pada <strong>AI Analytics</strong>, <strong>Web Management</strong>, dan <strong>Transformasi Digital</strong> untuk pendidikan dan industri.",
+    "photo": "assets/img/rafi.jpg",
+    "stickerTL": "M.Kom",
+    "stickerBR": "AI Researcher"
+  },
+  "stats": [
+    { "value": 3.93, "decimals": 2, "suffix": "", "label": "GPA Magister", "accent": false },
+    { "value": 5, "decimals": 0, "suffix": "+", "label": "Tahun Pengalaman", "accent": false },
+    { "value": 5, "decimals": 0, "suffix": "", "label": "Sertifikasi Utama", "accent": false },
+    { "value": "AI", "decimals": 0, "suffix": "", "label": "Researcher", "accent": true }
+  ],
+  "about": {
+    "headingHtml": "Lebih dari sekadar<br /><em>mengajar data.</em>",
+    "paragraphs": [
+      "Saya <strong>Muhammad Rafi Haidar Arsyad</strong>, Magister Komputer (M.Kom) yang bergerak di persimpangan <strong>sains data</strong>, <strong>kecerdasan buatan</strong>, dan <strong>strategi digital</strong>. Keseharian saya mengisi ruang kelas, menulis jurnal terakreditasi, dan membangun sistem digital yang dipakai nyata oleh bisnis.",
+      "Bagi saya, data bukan sekadar angka di dashboard — data adalah cara memahami perilaku manusia, lalu mengubahnya jadi keputusan yang berdampak. Itulah benang merah dari semua yang saya kerjakan."
+    ],
+    "chips": [
+      "🧠 Explainable AI",
+      "📊 Business Intelligence",
+      "🛒 Marketplace Analytics",
+      "🎓 Tech Educator",
+      "🚀 Growth Strategy",
+      "🌐 Web & CMS"
+    ],
+    "facts": [
+      { "label": "Nama", "value": "Muhammad Rafi H. Arsyad", "highlight": false },
+      { "label": "Gelar", "value": "Magister Komputer (M.Kom)", "highlight": false },
+      { "label": "Domisili", "value": "Semarang, Indonesia", "highlight": false },
+      { "label": "Fokus", "value": "Sains Data & AI", "highlight": false },
+      { "label": "Status", "value": "Dosen & Praktisi", "highlight": true }
+    ]
+  },
+  "expertise": {
+    "headingHtml": "Core <em>Expertise</em>",
+    "sub": "Fokus utama pengembangan solusi berbasis data dan teknologi pendidikan.",
+    "items": [
+      {
+        "icon": "blue",
+        "wide": true,
+        "title": "Sains Data & AI",
+        "descHtml": "Kompetensi mendalam di bidang Sains Data yang mencakup tata kelola data, visualisasi strategis, serta implementasi algoritma <strong>Machine Learning</strong> dan <strong>Deep Learning</strong> untuk solusi analitik yang presisi.",
+        "tags": ["Data Governance", "Machine Learning", "Deep Learning", "Visualization"]
+      },
+      {
+        "icon": "violet",
+        "wide": false,
+        "title": "Marketplace Research",
+        "descHtml": "Spesialisasi riset ekosistem Marketplace: analisis perilaku konsumen, optimalisasi layanan pelanggan, strategi penawaran produk, dan akselerasi trafik lewat manajemen <strong>Paid Ads</strong> yang terukur.",
+        "tags": ["Consumer Behavior", "Paid Ads", "Pricing Strategy"]
+      },
+      {
+        "icon": "pink",
+        "wide": false,
+        "title": "Digital Marketing & Analytics",
+        "descHtml": "Keahlian strategis menggunakan instrumen pemasaran online seperti Google Trends dan Ubersuggest. Berfokus pada produksi konten kreatif, analisis tren performa, serta manajemen trafik demi memaksimalkan konversi digital.",
+        "tags": ["Google Trends", "SEO", "Content Strategy", "Analytics"]
+      }
+    ]
+  },
+  "experience": {
+    "headingHtml": "Timeline <em>Karir</em>",
+    "sub": "Jejak profesional dalam ekosistem pendidikan, teknologi, dan pemasaran digital.",
+    "items": [
+      {
+        "date": "2026 — Sekarang",
+        "title": "Dosen Administrasi Bisnis",
+        "org": "Politeknik Negeri Semarang",
+        "points": [
+          "<strong>Pendidikan &amp; Pengajaran:</strong> Mengampu mata kuliah <strong>E-Commerce</strong> dan <strong>E-Business</strong> serta kurikulum Administrasi Bisnis yang adaptif terhadap dinamika industri digital.",
+          "<strong>Penelitian &amp; Pengembangan:</strong> Melaksanakan riset fundamental dan terapan dalam bidang bisnis digital, e-commerce, serta ekonomi digital.",
+          "<strong>Pengabdian Masyarakat:</strong> Melaksanakan Tri Dharma Perguruan Tinggi melalui program pemberdayaan masyarakat berbasis teknologi."
+        ]
+      },
+      {
+        "date": "2026 — Sekarang",
+        "title": "Dosen Sains Data",
+        "org": "Univ. Sains Teknologi Ekonomi Digital Indonesia (USTEDI)",
+        "points": [
+          "<strong>Pendidikan &amp; Pengajaran:</strong> Mengampu kurikulum Sains Data, Machine Learning, dan Business Intelligence yang adaptif terhadap dinamika industri digital.",
+          "<strong>Penelitian &amp; Pengembangan:</strong> Melaksanakan riset fundamental dan terapan dalam bidang Kecerdasan Buatan (AI) serta Ekonomi Digital.",
+          "<strong>Pengabdian Masyarakat:</strong> Melaksanakan Tri Dharma Perguruan Tinggi melalui program pemberdayaan masyarakat berbasis teknologi."
+        ]
+      },
+      {
+        "date": "2024 — 2026",
+        "title": "Guru Produktif Pemasaran",
+        "org": "SMK Swadaya Semarang",
+        "points": [
+          "<strong>Teaching Factory CV USE US:</strong> Mengelola divisi Marketplace, Konten, dan Affiliate dengan menyerap praktik bisnis riil ke dalam lingkungan sekolah.",
+          "Menyusun administrasi pembelajaran komprehensif (Modul, ATP, Penilaian) berbasis standar kurikulum industri digital.",
+          "<strong>Pembina Ekstrakurikuler:</strong> Memimpin unit \"YouTube &amp; Content Creator\" serta berperan aktif sebagai Tim Media sekolah."
+        ]
+      },
+      {
+        "date": "2023 — 2024",
+        "title": "Website Analyst & UI/UX Research",
+        "org": "PT Campus Data Media (Campus Digital)",
+        "points": [
+          "Audit metrik performa website secara berkala (trafik, konversi, retensi) untuk dasar pengambilan keputusan strategis.",
+          "Perancangan arsitektur informasi melalui Wireframe dan Prototype High-Fidelity menggunakan Figma."
+        ]
+      },
+      {
+        "date": "2020 — 2022",
+        "title": "Website Management & Instagram Specialist",
+        "org": "Universitas Stikubank Semarang",
+        "points": [
+          "Pengelolaan operasional CMS website prodi dengan standar editorial yang ketat.",
+          "Pengembangan strategi branding melalui konten kreatif pada kanal Instagram dan TikTok fakultas."
+        ]
+      }
+    ]
+  },
+  "publications": {
+    "headingHtml": "Penulis Buku &<br /><em>Peneliti Aktif</em>",
+    "sub": "Dedikasi akademik melalui publikasi jurnal terakreditasi SINTA dan literatur digital komersial.",
+    "journalCount": "3",
+    "bookCount": "1",
+    "items": [
+      {
+        "type": "Buku",
+        "book": true,
+        "title": "Tiktok Monetization: Rahasia Cuan Melalui Tiktok Live & Affiliate Marketing",
+        "meta": "Penerbit: Yayasan Drestanta Pelita Indonesia · Literatur Digital · 2025"
+      },
+      {
+        "type": "SINTA 3",
+        "book": false,
+        "title": "A Comparative Analysis of Explainable AI Techniques for Sentiment Classification",
+        "meta": "Jurnal INFORM · 2025"
+      },
+      {
+        "type": "SINTA 3",
+        "book": false,
+        "title": "Sentiment Analysis on BNI Mobile App Review Using KNN Algorithm",
+        "meta": "Jurnal Sinkron · 2024"
+      },
+      {
+        "type": "SINTA 4",
+        "book": false,
+        "title": "Klusterisasi Data Review Marketplace Blibli dengan K-Means & K-Medoids",
+        "meta": "JTIUST UNIKA · 2024"
+      }
+    ]
+  },
+  "certifications": {
+    "headingHtml": "Professional <em>Certifications</em>",
+    "sub": "Validasi keahlian di bidang pemasaran digital, teknologi jaringan, dan data science.",
+    "items": [
+      { "badge": "BNSP", "level": "Kompeten", "title": "Pemasaran Digital", "org": "LSP Teknologi Digital" },
+      { "badge": "BNSP", "level": "Level 4", "title": "Kewirausahaan Industri", "org": "LSP Talenta Wirausaha Nusantara" },
+      { "badge": "CISCO", "level": "CCNAv7", "title": "Cisco CCNAv7", "org": "Cisco Networking Academy · Intro The Networks" },
+      { "badge": "PYTHON", "level": "Essentials", "title": "Python Essentials", "org": "OpenEDG Python Institute · Algorithms & OOP" },
+      { "badge": "CEFR", "level": "B2", "title": "English CEFR B2", "org": "British Council EnglishScore · Score: 440" }
+    ]
+  },
+  "portfolio": {
+    "headingHtml": "Project & <em>Activity</em>",
+    "sub": "Rangkuman implementasi strategi digital, riset kolaborasi, dan peran sebagai edukator teknologi.",
+    "items": [
+      {
+        "tag": "Digital Marketing",
+        "tagColor": "blue",
+        "wide": false,
+        "title": "Social Media Strategy & Optimization",
+        "descHtml": "",
+        "points": [
+          "Merancang strategi konten strategis Instagram untuk peningkatan engagement.",
+          "Produksi aset visual dan tekstual kreatif (Foto, Video, Copywriting).",
+          "Manajemen kalender editorial dan penjadwalan kampanye periodik.",
+          "Analisis metrik kinerja (Reach, Interaction, Konversi) untuk perbaikan.",
+          "Manajemen komunitas dan interaksi pengikut yang profesional."
+        ],
+        "handlesLabel": "Handle akun Instagram:",
+        "handles": [
+          "@kowalwoodart.id",
+          "@koreanfoodsemarang.id",
+          "@naturindo_semarang",
+          "@iphoneservice.smg",
+          "@karman.lawfirm",
+          "@almirabutiksyari"
+        ],
+        "chips": [],
+        "talk": []
+      },
+      {
+        "tag": "MSIB Program",
+        "tagColor": "violet",
+        "wide": false,
+        "title": "Wirausaha Merdeka (WMK) MSIB",
+        "descHtml": "Berhasil menyelesaikan program inkubasi bisnis Kampus Merdeka di Politeknik Negeri Semarang.",
+        "points": [],
+        "handlesLabel": "",
+        "handles": [],
+        "chips": [
+          "Marketing Business Plan",
+          "Personal Branding",
+          "Business Model Canvas",
+          "Business Bootcamp",
+          "Product Quality Process",
+          "Pitching Day & Mentoring",
+          "Sertifikasi Uji Kompetensi Industri"
+        ],
+        "talk": []
+      },
+      {
+        "tag": "Kedaireka",
+        "tagColor": "pink",
+        "wide": false,
+        "title": "Matching Fund Kedaireka",
+        "descHtml": "Kolaborasi riset dengan <strong>Dosen Unisbank Semarang</strong> melalui pembuatan <strong>Mesin Otomatis Penyiram Air</strong> berbasis IoT untuk budidaya Jamur Tiram di Gunungpati, Semarang.",
+        "points": [],
+        "handlesLabel": "",
+        "handles": [],
+        "chips": ["IoT & Automation Research"],
+        "talk": []
+      },
+      {
+        "tag": "Speaker",
+        "tagColor": "blue",
+        "wide": true,
+        "title": "Narasumber & Tech Educator",
+        "descHtml": "",
+        "points": [],
+        "handlesLabel": "",
+        "handles": [],
+        "chips": [],
+        "talk": [
+          "<strong>Workshop AI:</strong> Pelatihan Foto Katalog Produk (DINNAKERIND Demak 2026).",
+          "<strong>Workshop AI:</strong> Implementasi AI bagi siswa SMK Se-Karisidenan Pekalongan (Okt 2025).",
+          "<strong>Digital Marketing UMKM:</strong> Pelatihan Foto Produk Minimalis Modern di Mangunharjo Tugu (Okt 2025).",
+          "<strong>Digitalisasi Pembelajaran:</strong> Materi Social Media Marketing di SMK Negeri 2 Pekalongan (Okt 2023).",
+          "<strong>Workshop UI/UX:</strong> Fundamental Digitalisasi Pembelajaran di SMKN Ngraho Bojonegoro (Des 2023).",
+          "<strong>Pelatihan Canva:</strong> Organisasi BAI Al Ikhsan Unisbank Semarang.",
+          "<strong>Brand Ambassador:</strong> Unisbank 2023/2024 & Narasumber SMK Negeri 9 Semarang.",
+          "<strong>Pembekalan Magang:</strong> Strategi Social Media Marketing di SMK Swadaya Semarang."
+        ]
+      },
+      {
+        "tag": "Mentorship",
+        "tagColor": "violet",
+        "wide": false,
+        "title": "Pembimbing Magang Industri",
+        "descHtml": "Menjadi Pembimbing Magang Siswa SMK Swadaya Semarang di jaringan retail <strong>Alfamidi</strong>, memastikan integrasi kurikulum dengan operasional praktik kerja nyata.",
+        "points": [],
+        "handlesLabel": "",
+        "handles": [],
+        "chips": [],
+        "talk": []
+      }
+    ]
+  },
+  "business": {
+    "headingHtml": "Usaha yang <em>Dijalankan</em>",
+    "sub": "Unit bisnis profesional dengan manajemen digital terpadu.",
+    "items": [
+      {
+        "name": "JP JOURNEY SEMARANG",
+        "desc": "Pusat Hijab Premium dan Fashion Wanita By Journey Scarves. Fokus pada penyediaan produk berkualitas tinggi.",
+        "logo": "assets/img/jp-journey.jpg"
+      },
+      {
+        "name": "OMAH MADU SEMARANG",
+        "desc": "Pusat Serba Olahan Produk Lebah (Bee Pollen, Propolis, Madu Murni). Berkomitmen pada kemurnian alami.",
+        "logo": "assets/img/omah-madu.jpg"
+      }
+    ]
+  },
+  "gallery": {
+    "headingHtml": "Momen & <em>Dokumentasi</em>",
+    "sub": "Klik gambar untuk melihat rincian foto lebih jelas.",
+    "groups": [
+      {
+        "id": "slide1",
+        "label": "Narasumber & Tech Educator",
+        "images": [
+          { "src": "assets/img/g01.jpg", "alt": "Dokumentasi narasumber dan tech educator 1" },
+          { "src": "assets/img/g02.jpg", "alt": "Dokumentasi narasumber dan tech educator 2" },
+          { "src": "assets/img/g03.jpg", "alt": "Dokumentasi narasumber dan tech educator 3" },
+          { "src": "assets/img/g04.jpg", "alt": "Dokumentasi narasumber dan tech educator 4" },
+          { "src": "assets/img/g05.jpg", "alt": "Dokumentasi narasumber dan tech educator 5" }
+        ]
+      },
+      {
+        "id": "slide2",
+        "label": "Social Media Specialist",
+        "images": [
+          { "src": "assets/img/g06.jpg", "alt": "Dokumentasi social media specialist 1" },
+          { "src": "assets/img/g07.jpg", "alt": "Dokumentasi social media specialist 2" },
+          { "src": "assets/img/g08.jpg", "alt": "Dokumentasi social media specialist 3" },
+          { "src": "assets/img/g09.jpg", "alt": "Dokumentasi social media specialist 4" },
+          { "src": "assets/img/g10.jpg", "alt": "Dokumentasi social media specialist 5" }
+        ]
+      },
+      {
+        "id": "slide3",
+        "label": "Business & MSIB",
+        "images": [
+          { "src": "assets/img/g11.jpg", "alt": "Dokumentasi business dan MSIB 1" },
+          { "src": "assets/img/g12.jpg", "alt": "Dokumentasi business dan MSIB 2" },
+          { "src": "assets/img/g13.jpg", "alt": "Dokumentasi business dan MSIB 3" },
+          { "src": "assets/img/g14.jpg", "alt": "Dokumentasi business dan MSIB 4" },
+          { "src": "assets/img/g15.jpg", "alt": "Dokumentasi business dan MSIB 5" }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Let's Collaborate",
+    "headingHtml": "Punya ide?<br /><em>Ayo bangun bersama.</em>",
+    "desc": "Terbuka untuk kolaborasi riset, workshop AI, pengembangan produk digital, maupun konsultasi strategi data & pemasaran.",
+    "email": "muhrafihaidar27@gmail.com",
+    "whatsappDisplay": "0858-0124-2159",
+    "whatsappLink": "https://wa.me/6285801242159"
+  },
+  "footer": {
+    "name": "Muhammad Rafi Haidar Arsyad",
+    "role": "Dosen Sains Data & Digital Strategist"
+  }
+}

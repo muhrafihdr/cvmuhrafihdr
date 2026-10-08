@@ -84,8 +84,23 @@ python3 -m http.server 8080
 ## ✏️ Kustomisasi
 
 - **Warna & tema**: ubah CSS variables di bagian `:root` pada `assets/css/style.css`.
-- **Konten**: edit langsung teks pada `index.html` (data terstruktur per section).
+- **Konten**: edit lewat **Panel Admin** (lihat bawah) atau langsung di `content.json`.
 - **Foto/galeri**: ganti file di `assets/img/` dengan nama yang sama.
+
+## 🔐 Panel Admin (edit konten tanpa coding)
+
+Buka **`/admin.html`** (atau klik **⚙ Panel Admin** di footer situs).
+
+Cara pakai:
+1. Buat **Personal Access Token** GitHub → https://github.com/settings/tokens (scope **`repo`**).
+2. Tempel token di kolom **GitHub Token**, klik **Masuk**.
+3. Pilih bagian (Profil, Timeline Karir, Publikasi, dll), edit fieldnya. Bisa **tambah/hapus/urutkan** item.
+4. Klik **💾 Simpan** (atau `Ctrl/Cmd + S`). Perubahan otomatis di-commit ke `content.json` di repo, dan GitHub Pages rebuild ±1 menit.
+
+> 🔒 Token hanya disimpan di **localStorage browser Anda**, tidak pernah dikirim ke server lain selain `api.github.com`. Halaman `admin.html` di-`noindex` dan diblokir di `robots.txt`.
+
+Seluruh isi situs dirender dari **`content.json`** oleh `assets/js/main.js`.
+Jika `content.json` gagal dimuat, HTML statis tetap tampil sebagai fallback.
 
 ---
 

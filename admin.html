@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Panel Admin — rafihaidar.my.id</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230a0a0f'/%3E%3Ctext x='50' y='72' font-size='60' font-family='Arial,sans-serif' font-weight='bold' text-anchor='middle' fill='%234d8dff'%3E%E2%9A%99%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/admin.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__brand">
+      <span class="topbar__logo">⚙</span>
+      <div>
+        <strong>Panel Admin</strong>
+        <span>rafihaidar.my.id</span>
+      </div>
+    </div>
+
+    <div class="topbar__actions">
+      <span class="pill" id="connState">Memuat…</span>
+      <button class="btn btn--ghost" id="btnPreview" type="button">Lihat Situs ↗</button>
+      <button class="btn btn--ghost" id="btnReload" type="button">Muat Ulang</button>
+      <button class="btn btn--primary" id="btnSave" type="button">💾 Simpan</button>
+    </div>
+  </header>
+
+  <main class="admin">
+    <aside class="admin__side">
+      <div class="login" id="loginBox">
+        <label for="tokenInput">GitHub Token (PAT)</label>
+        <input type="password" id="tokenInput" placeholder="ghp_… atau github_pat_…" autocomplete="off" />
+        <div class="login__row">
+          <button class="btn btn--primary btn--sm" id="btnLogin" type="button">Masuk</button>
+          <button class="btn btn--ghost btn--sm" id="btnLogout" type="button">Keluar</button>
+        </div>
+        <p class="hint">
+          Token disimpan <b>hanya di browser ini</b> (localStorage) dan dipakai untuk
+          menyimpan perubahan ke repo <code>muhrafihdr/cvmuhrafihdr</code>.
+          Buat token dengan scope <code>repo</code>.
+        </p>
+      </div>
+
+      <nav class="admin__nav" id="sectionNav" aria-label="Bagian konten"></nav>
+
+      <div class="admin__foot">
+        <a href="index.html">← Kembali ke situs</a>
+      </div>
+    </aside>
+
+    <section class="admin__main">
+      <div class="admin__head">
+        <h1 id="sectionTitle">Konten</h1>
+        <p id="sectionHint" class="hint">Pilih bagian di kiri untuk mulai mengedit.</p>
+      </div>
+      <form id="editorForm" class="editor" autocomplete="off"></form>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>
