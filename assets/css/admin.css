@@ -41,6 +41,65 @@ body::before {
 a { color: var(--blue); text-decoration: none; }
 code { font-family: var(--font-mono); font-size: 0.82em; color: var(--blue); }
 
+/* ---- Lock screen ---- */
+.lock {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  background: radial-gradient(700px 500px at 20% 0%, rgba(77, 141, 255, 0.16), transparent 60%),
+    radial-gradient(700px 500px at 90% 100%, rgba(139, 92, 255, 0.14), transparent 60%), var(--bg);
+}
+.lock[hidden] { display: none; }
+.lock__box {
+  width: min(420px, 100%);
+  text-align: center;
+  padding: 36px 30px;
+  border: 1px solid var(--line-strong);
+  border-radius: 22px;
+  background: var(--bg-3);
+  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.9);
+}
+.lock__icon {
+  width: 66px; height: 66px;
+  margin: 0 auto 18px;
+  display: grid; place-items: center;
+  font-size: 1.9rem;
+  border-radius: 18px;
+  background: var(--grad);
+  color: #08080c;
+}
+.lock__box h1 { font-family: var(--font-display); font-size: 1.45rem; margin-bottom: 6px; }
+.lock__box .hint { margin-bottom: 22px; }
+.lock__box form { display: flex; flex-direction: column; gap: 12px; }
+.lock__box input {
+  width: 100%;
+  font: inherit;
+  font-size: 1rem;
+  text-align: center;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--line-strong);
+  background: var(--bg);
+  color: var(--txt);
+  letter-spacing: 0.1em;
+}
+.lock__box input:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(77, 141, 255, 0.14); }
+.lock__box .btn { justify-content: center; width: 100%; }
+.lock__msg { min-height: 1.2em; margin-top: 12px; font-size: 0.85rem; color: #ff6b8a; }
+.lock__back { display: inline-block; margin-top: 18px; font-family: var(--font-mono); font-size: 0.78rem; color: var(--txt-mute); }
+.lock__back:hover { color: var(--blue); }
+.lock.is-shake .lock__box { animation: shake 0.4s; }
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-9px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(4px); }
+}
+
 /* ---- Topbar ---- */
 .topbar {
   position: sticky;

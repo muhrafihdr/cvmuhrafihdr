@@ -7,6 +7,9 @@
   const CFG = { owner: "muhrafihdr", repo: "cvmuhrafihdr", branch: "main", path: "content.json" };
   const API = "https://api.github.com";
   const TOKEN_KEY = "cv_admin_token";
+  const LOCK_KEY = "cv_admin_unlocked";
+  const LOCK_HASH = "f050fcfd4023039880c85eb261eaa4c44bbd49aff9364821aa84665cd94b6d6e";
+  let loaded = false;
 
   const SECTIONS = [
     { key: "meta", label: "SEO & Meta", ico: "🏷️" },
@@ -491,7 +494,63 @@
     toast("Berhasil keluar. Perubahan belum tersimpan tidak akan dikirim.", "");
   }
 
+  /* ---------- lock ---------- */
+  async function sha256Hex(str) {
+    const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+    return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
+  }
+
+  function showLock() {
+    const el = $("#lockScreen");
+    el.hidden = false;
+    document.body.style.overflow = "hidden";
+    const p = $("#lockPass");
+    p.value = "";
+    setTimeout(() => p.focus(), 60);
+  }
+
+  function hideLock() {
+    $("#lockScreen").hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  async function tryUnlock(pass) {
+    let ok = false;
+    try {
+      ok = (await sha256Hex(pass)) === LOCK_HASH;
+    } catch (e) {
+      $("#lockMsg").textContent = "Browser tidak mendukung verifikasi (butuh HTTPS).";
+      return false;
+    }
+    if (ok) {
+      sessionStorage.setItem(LOCK_KEY, "1");
+      hideLock();
+      if (!loaded) {
+        loaded = true;
+        boot();
+      }
+      toast("Panel terbuka 🔓", "is-ok");
+      return true;
+    }
+    const ls = $("#lockScreen");
+    ls.classList.add("is-shake");
+    setTimeout(() => ls.classList.remove("is-shake"), 460);
+    $("#lockMsg").textContent = "Kata sandi salah. Coba lagi.";
+    return false;
+  }
+
+  function lockNow() {
+    sessionStorage.removeItem(LOCK_KEY);
+    $("#lockMsg").textContent = "";
+    showLock();
+  }
+
   /* ---------- events ---------- */
+  $("#lockForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    await tryUnlock($("#lockPass").value);
+  });
+  $("#btnLock").addEventListener("click", lockNow);
   $("#btnLogin").addEventListener("click", login);
   $("#btnLogout").addEventListener("click", logout);
   $("#btnSave").addEventListener("click", save);
@@ -511,5 +570,12 @@
     // tidak memblokir; hanya pengingat halus
   });
 
-  boot();
+  /* ---------- gate ---------- */
+  if (sessionStorage.getItem(LOCK_KEY) === "1") {
+    loaded = true;
+    hideLock();
+    boot();
+  } else {
+    showLock();
+  }
 })();

@@ -12,6 +12,21 @@
   <link rel="stylesheet" href="assets/css/admin.css" />
 </head>
 <body>
+  <!-- Lock screen (default terkunci; JS membuka bila sandi benar) -->
+  <div class="lock" id="lockScreen">
+    <div class="lock__box">
+      <div class="lock__icon">🔒</div>
+      <h1>Panel Admin Terkunci</h1>
+      <p class="hint">Masukkan kata sandi untuk melanjutkan.</p>
+      <form id="lockForm" autocomplete="off">
+        <input type="password" id="lockPass" placeholder="Kata sandi" autocomplete="current-password" autofocus />
+        <button class="btn btn--primary" type="submit">Buka Panel</button>
+      </form>
+      <p class="lock__msg" id="lockMsg"></p>
+      <a class="lock__back" href="index.html">← Kembali ke situs</a>
+    </div>
+  </div>
+
   <header class="topbar">
     <div class="topbar__brand">
       <span class="topbar__logo">⚙</span>
@@ -26,6 +41,7 @@
       <button class="btn btn--ghost" id="btnPreview" type="button">Lihat Situs ↗</button>
       <button class="btn btn--ghost" id="btnReload" type="button">Muat Ulang</button>
       <button class="btn btn--primary" id="btnSave" type="button">💾 Simpan</button>
+      <button class="btn btn--ghost" id="btnLock" type="button">🔒 Kunci</button>
     </div>
   </header>
 
